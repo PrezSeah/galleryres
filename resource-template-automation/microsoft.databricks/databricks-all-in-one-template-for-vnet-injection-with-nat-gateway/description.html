@@ -1,0 +1,64 @@
+<h1 id="deploy-a-nat-gateway-network-security-group-a-virtual-network-and-an-azure-databricks-workspace-with-the-virtual-network">Deploy a NAT Gateway, Network Security Group, a Virtual Network and an Azure Databricks Workspace with the Virtual Network</h1>
+<p><img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.databricks/databricks-all-in-one-template-for-vnet-injection-with-nat-gateway/PublicLastTestDate.svg" alt="Azure Public Test Date">
+<img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.databricks/databricks-all-in-one-template-for-vnet-injection-with-nat-gateway/PublicDeployment.svg" alt="Azure Public Test Result"></p>
+<p><img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.databricks/databricks-all-in-one-template-for-vnet-injection-with-nat-gateway/FairfaxLastTestDate.svg" alt="Azure US Gov Last Test Date">
+<img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.databricks/databricks-all-in-one-template-for-vnet-injection-with-nat-gateway/FairfaxDeployment.svg" alt="Azure US Gov Last Test Result"></p>
+<p><img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.databricks/databricks-all-in-one-template-for-vnet-injection-with-nat-gateway/BestPracticeResult.svg" alt="Best Practice Check">
+<img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.databricks/databricks-all-in-one-template-for-vnet-injection-with-nat-gateway/CredScanResult.svg" alt="Cred Scan Check"></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.databricks%2Fdatabricks-all-in-one-template-for-vnet-injection-with-nat-gateway%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="Deploy To Azure"></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.databricks%2Fdatabricks-all-in-one-template-for-vnet-injection-with-nat-gateway%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true" alt="Deploy To Azure US Gov"></a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.databricks%2Fdatabricks-all-in-one-template-for-vnet-injection-with-nat-gateway%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true" alt="Visualize"></a></p>
+<p>This template allows you to create a nat gateway, network security group, a virtual network and an Azure Databricks workspace with the virtual network.
+For more information, see the <a href="https://docs.microsoft.com/en-us/azure/azure-databricks/">Azure Databricks Documentation</a>.</p>
+<h3 id="what-is-azure-databricks-">What is Azure Databricks?</h3>
+<p>Azure Databricks is an Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform. Designed with the founders of Apache Spark, Databricks is integrated with Azure to provide one-click setup, streamlined workflows, and an interactive workspace that enables collaboration between data scientists, data engineers, and business analysts.</p>
+<p>Azure Databricks is a fast, easy, and collaborative Apache Spark-based analytics service. For a big data pipeline, the data (raw or structured) is ingested into Azure through Azure Data Factory in batches, or streamed near real-time using Kafka, Event Hub, or IoT Hub. This data lands in a data lake for long term persisted storage, in Azure Blob Storage or Azure Data Lake Storage. As part of your analytics workflow, use Azure Databricks to read data from multiple data sources such as Azure Blob Storage, Azure Data Lake Storage, Azure Cosmos DB, or Azure SQL Data Warehouse and turn it into breakthrough insights using Spark.</p>
+<p>This template allows you to install the following options</p>
+<ul>
+<li>DataBricks 14 day trial</li>
+<li>DataBricks Standard</li>
+<li>DataBricks Premium</li>
+</ul>
+<h3 id="databricks-resources">DataBricks Resources</h3>
+<p><a href="https://docs.microsoft.com/en-us/azure/databricks/getting-started/index">Getting Started with DataBricks</a>
+<a href="https://docs.azuredatabricks.net/administration-guide/index.html">Data Bricks Admin Guide</a></p>
+<h3 id="microsoft-learn-modules">Microsoft Learn Modules</h3>
+<p><a href="https://docs.microsoft.com/en-us/learn/browse/?term=Databricks">Data Bricks Microsoft Learn Modules</a></p>
+<h2 id="the-template">The Template</h2>
+<p>Don&#39;t let the size of the template scares you. The structure is very intuitive and once that you get the gist of it, you will see how much easier your life will be deploying resources to Azure.</p>
+<p>These are the parameters on the template, most of them already have values inserted, the ones that you need to inform are: <strong>adminUsername</strong>, <strong>adminPassword</strong> and <strong>resourceGroup</strong>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Suggested value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>WorkspaceName</strong></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The name of your DataBricks Workspace.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Pricing Tier</strong></td>
+<td style="text-align:left">14 Day Trial, Standard or Premium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Resource Group</strong> The Resource Group which you wish to deploy your DataBricks Environment. 
+<strong>Disable Public Ip</strong> | Default is false | Set this to true to disable Public IP creation.</p>
+<p>All the other parameters can be left as default.</p>
+<ul>
+<li><strong>Nsg Name</strong> Name of the network Security Group</li>
+<li><strong>Vnet Name</strong> Name of the Virtual Network</li>
+<li><strong>Private Subnet Name</strong> Name of the Private Subnet</li>
+<li><strong>Public Subnet Name</strong> Name of the Public Subnet</li>
+<li><strong>Location</strong> Location of Data Center</li>
+<li><strong>Vnet Cidr</strong> Cidr Range of the Vnet</li>
+<li><strong>Private Subnet Cidr</strong> Cidr Range of the Private Subnet</li>
+<li><strong>Public Subnet Cidr</strong> Cidr Range of the Public Subnet</li>
+<li><strong>NAT Gateway Name</strong> Name of the NAT Gateway</li>
+<li><strong>NAT Gateway Public IP Name</strong> Name of the NAT Gateway Public IP</li>
+</ul>
