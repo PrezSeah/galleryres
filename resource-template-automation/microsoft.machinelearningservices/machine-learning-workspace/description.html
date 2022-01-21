@@ -1,0 +1,84 @@
+<h1 id="azure-machine-learning-workspace">Azure Machine Learning workspace</h1>
+<p><img src="./machine-learning-workspace.png" alt="machine-learning-workspace">
+<p><img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.machinelearningservices/machine-learning-workspace/PublicLastTestDate.svg" alt="Azure Public Test Date">
+<img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.machinelearningservices/machine-learning-workspace/PublicDeployment.svg" alt="Azure Public Test Result"></p>
+<p><img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.machinelearningservices/machine-learning-workspace/FairfaxLastTestDate.svg" alt="Azure US Gov Last Test Date">
+<img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.machinelearningservices/machine-learning-workspace/FairfaxDeployment.svg" alt="Azure US Gov Last Test Result"></p>
+<p><img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.machinelearningservices/machine-learning-workspace/BestPracticeResult.svg" alt="Best Practice Check">
+<img src="https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.machinelearningservices/machine-learning-workspace/CredScanResult.svg" alt="Cred Scan Check">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPrezSeah%2Fgalleryres%2Fmain%2Fresource-template-automation%2Fmicrosoft.machinelearningservices%2Fmachine-learning-workspace%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="Deploy To Azure"></a>
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FPrezSeah%2Fgalleryres%2Fmain%2Fresource-template-automation%2Fmicrosoft.machinelearningservices%2Fmachine-learning-workspace%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true" alt="Visualize"></a></p>
+<p>This deployment template specifies an Azure Machine Learning workspace, and its associated resources including Azure Key Vault, Azure Storage, Azure Application Insights and Azure Container Registry.</p>
+<p>This configuration describes the minimal set of resources you require to get started with Azure Machine Learning.</p>
+<h2 id="resources">Resources</h2>
+<table>
+<thead>
+<tr>
+<th>Provider and type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Microsoft.Insights/components</code></td>
+<td>An Azure Application Insights instance associated to the Azure Machine Learning workspace</td>
+</tr>
+<tr>
+<td><code>Microsoft.KeyVault/vaults</code></td>
+<td>An Azure Key Vault instance associated to the Azure Machine Learning workspace</td>
+</tr>
+<tr>
+<td><code>Microsoft.Storage/storageAccounts</code></td>
+<td>An Azure Storage instance associated to the Azure Machine Learning workspace</td>
+</tr>
+<tr>
+<td><code>Microsoft.ContainerRegistry/registries</code></td>
+<td>An Azure Container Registry instance associated to the Azure Machine Learning workspace</td>
+</tr>
+<tr>
+<td><code>Microsoft.MachineLearningServices/workspaces</code></td>
+<td>An Azure Machine Learning workspace instance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="variables">Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td>Name of the deployment</td>
+</tr>
+<tr>
+<td>environment</td>
+<td>The prefix to add to resource names e.g. dev / test / prod</td>
+</tr>
+<tr>
+<td>location</td>
+<td>The Azure region used for deployments</td>
+</tr>
+<tr>
+<td>hbi_workspace</td>
+<td>Specifies whether to reduce telemetry collection and enable additional encryption.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="learn-more">Learn more</h2>
+<p>If you are new to Azure Machine Learning, see:</p>
+<ul>
+<li><a href="https://azure.microsoft.com/services/machine-learning-service/">Azure Machine Learning service</a></li>
+<li><a href="https://docs.microsoft.com/azure/machine-learning/">Azure Machine Learning documentation</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/machine-learning/concept-enterprise-security">Enterprise security and governance for Azure Machine Learning</a>.</li>
+<li><a href="https://docs.microsoft.com/azure/templates/microsoft.machinelearningservices/allversions">Azure Machine Learning template reference</a></li>
+</ul>
+<p>If you are new to template development, see:</p>
+<ul>
+<li><a href="https://docs.microsoft.com/azure/azure-resource-manager/">Azure Resource Manager documentation</a></li>
+<li><a href="https://docs.microsoft.com/azure/machine-learning/service/how-to-create-workspace-template">Use an Azure Resource Manager template to create a workspace for Azure Machine Learning</a></li>
+<li><a href="https://azure.microsoft.com/resources/templates/">Quickstart templates</a></li>
+</ul>
