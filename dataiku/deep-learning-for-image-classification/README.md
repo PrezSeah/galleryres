@@ -1,7 +1,7 @@
 # Deep Learning for Image Classification
 
 The goal of the project is to classify images into two animals from the family Felidae: lions or tigers.
-We have a list of ]images in a managed folder](https://gallery.dataiku.com/projects/LIONANDTIGER/managedfolder/Ih9S2Mq5/view/) to classify.
+We have a list of [images in a managed folder](https://gallery.dataiku.com/projects/LIONANDTIGER/managedfolder/Ih9S2Mq5/view/) to classify.
 
 First, we are going to classify these images using a pre-trained model. Then, we will retrain the model to try to improve our accuracy.
 
@@ -23,7 +23,7 @@ The plugin includes a macro for downloading a pre-trained deep learning model. T
 The plugin includes a recipe for classifying images with a trained model. It takes as inputs a folder of images to classify and a model for classifying them. The output dataset, with some light preparation, contains the predictions.
 
 ![classifying-images](./images/classifying-images.png)
-[![Explore](./images/explore.png)](https://gallery.dataiku.com/projects/LIONANDTIGER/flow/)
+[![Explore](./images/explore.png)]https://gallery.dataiku.com/projects/LIONANDTIGER/datasets/Classification_results/explore/)
 
 ### Retraining a Model
 The plugin includes a recipe for retraining a model. It takes as inputs the pre-trained model, a folder of images to do the retraining, and a dataset of labels for the images. The output dataset, with some light preparation, contains the predictions.
