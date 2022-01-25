@@ -24,7 +24,7 @@ This sample creates a data factory with a data pipeline that processes data by r
     - hiveScriptFolder is the name of the folder that contains the hive query (HQL) file. For the tutorial, it is **script**.  
     - hiveScriptFile is the name of the hive script file (HQL). For the sample, it is **partitionweblogs.hql**. 
 
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri//https%3A%2F%2Fraw.githubusercontent.com%2FPrezSeah%2Fgalleryres%2Fmain%2Fresource-template-automation%2Fmicrosoft.datafactory%2Fdata-factory-hive-transformation%2Fazuredeploy.json)
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPrezSeah%2Fgalleryres%2Fmain%2Fresource-template-automation%2Fmicrosoft.datafactory%2Fdata-factory-hive-transformation%2Fazuredeploy.json)
 [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)](http://armviz.io/#/?load=/https%3A%2F%2Fraw.githubusercontent.com%2FPrezSeah%2Fgalleryres%2Fmain%2Fresource-template-automation%2Fmicrosoft.datafactory%2Fdata-factory-hive-transformation%2Fazuredeploy.json)
 
 When you deploy this Azure Resource Template, a data factory is created with the following entities: 
