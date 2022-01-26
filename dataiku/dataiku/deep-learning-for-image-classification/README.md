@@ -1,7 +1,7 @@
 # Deep Learning for Image Classification
 
 The goal of the project is to classify images into two animals from the family Felidae: lions or tigers.
-We have a list of [images in a managed folder](https://gallery.dataiku.com/projects/LIONANDTIGER/managedfolder/Ih9S2Mq5/view/) to classify.
+We have a list of images in a managed folder to classify.
 
 First, we are going to classify these images using a pre-trained model. Then, we will retrain the model to try to improve our accuracy.
 
