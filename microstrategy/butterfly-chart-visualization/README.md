@@ -46,5 +46,5 @@ Published: Oct 1, 2021
 Last updated: Oct 1, 2021
 
 ## Download attachments
-- [EChartButterfly.zip](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.zip)
-- [EChartButterfly.mstr](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.mstr)
+- [EChartButterfly.zip](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.zip)
+- [EChartButterfly.mstr](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.mstr)

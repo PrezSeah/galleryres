@@ -97,5 +97,5 @@ Published: Aug 17, 2021
 Last updated: Aug 17, 2021
 
 ## Download attachments
-- [EChartGauge.zip](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/gauge-custom-visualization/attachments/EChartGauge.zip)
-- [EChartGauge.mstr](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/gauge-custom-visualization/attachments/eChart-Gauge-Sample.mstr)
+- [EChartGauge.zip](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/attachments/EChartGauge.zip)
+- [EChartGauge.mstr](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/attachments/eChart-Gauge-Sample.mstr)
