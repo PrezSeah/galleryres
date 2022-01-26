@@ -1,6 +1,6 @@
 # Gauge Custom Visualization
 
-![gauge-chart](./images/gauge-chart.jfif)
+![gauge-chart](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-chart.jfif)
 
 ## Gauge chart for MicroStrategy Dossier
 You can easily create gauge chart using metrics and format it as you want. 
@@ -17,55 +17,55 @@ Min and Max value for setting start and end point of gauge .
 
 Please refer attached mstr file ( This sample dossier is built in 2021 update 2 environment. Please open it with latest Workstation )
 
-![gauge-style-and-format](./images/gauge-style-and-format.jfif)
+![gauge-style-and-format](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-style-and-format.jfif)
 
 ## Gauge Style and format 
 It supports several options for various gauge style
 
 ## Predefined Styles
-![gauge-predefined-style](./images/gauge-predefined-style.jfif)
-![gauge-sample](./images/gauge-sample.jfif)
+![gauge-predefined-style](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-predefined-style.jfif)
+![gauge-sample](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-sample.jfif)
 
 ## Format options
 
 ### Minimum and Maximum
 You can set default value of min and max in format tab.
 
-![gauge-min-max](./images/gauge-min-max.jfif)
+![gauge-min-max](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-min-max.jfif)
 
 **Start Angle and End Angle** : Decide where to start and end drawing gauge. 
 0 degree or 360 degree of gauge is right side and add degrees to anti-clockwise direction.
 
-![gauge-angle](./images/gauge-angle.jfif)
+![gauge-angle](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-angle.jfif)
 
 For example, start angle :180 and end angle : 0 will show half gauge.
 
 ### Size and Margin
 Margin will move gauge **center point** vertically or horizontally. Gauge size will shrink or magnify the gauge. This is  percentage value to widget size.
 
-![gauge-margin](./images/gauge-margin.jfif)
+![gauge-margin](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-margin.jfif)
 
 This option is useful when your gauge has small portion of circle like below picture .
 It just draws gauge from 90 degree to 0 degree and a lot of space is empty.
 
-![gauge-set-margin](./images/gauge-set-margin.jfif)
+![gauge-set-margin](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-set-margin.jfif)
 
 You can move center by setting margin % 
 
-![gauge-set-margin-2](./images/gauge-set-margin-2.jfif)
+![gauge-set-margin-2](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-set-margin-2.jfif)
 
 Above setting will move center 20% left and 75% from top and magnify gauge 120% from original size. 
 Default gauge center is 50% left and 50% from top and radius is 100%.
 
 You can move metric value and name by setting margin of the font in Gauge font and Position tab.  Same rule will be applied. 
 
-![gauge-set-margin-3](./images/gauge-set-margin-3.jfif)
+![gauge-set-margin-3](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-set-margin-3.jfif)
 
 ### Gauge Threshold
 In Gauge detail tab, You can enable threshold color by percent of gauge min max. 
 If you want to set color of bottom 20% is blue and top 20% is red, set threshold like below.
 
-![gauge-threshold](./images/gauge-threshold.jfif)
+![gauge-threshold](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/gauge-custom-visualization/images/gauge-threshold.jfif)
 
 There is known issue that if you type into value in the threshold field, threshold is sometimes missing depends on the value is overlapped other threshold. When this happen, reset other values will resolve the issue.
 

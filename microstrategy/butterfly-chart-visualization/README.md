@@ -2,7 +2,7 @@
 
 With this custom visualization you can easily create butterfly chart which is a type of bar chart where two sets of data series are displayed side by side. 
 
-![butterfly-chart](./images/butterfly-chart.jfif)
+![butterfly-chart](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/images/butterfly-chart.jfif)
 
 ## Butterfly Chart for MicroStrategy Dossier
 With this custom visualization you can easily create butterfly chart which is a type of bar chart where two sets of data series are displayed side by side. 
@@ -12,11 +12,11 @@ This visualization is free to use.
 ## Basic Usage
 The visualization requires at least 1 attribute and 1 metric.
 
-![butterfly-chart-basic-usage](./images/butterfly-chart-basic-usage.jfif)
+![butterfly-chart-basic-usage](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/images/butterfly-chart-basic-usage.jfif)
 
 You can easily compare two metrics with same y-axis as below
 
-![butterfly-chart-compare](./images/butterfly-chart-compare.jfif)
+![butterfly-chart-compare](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/images/butterfly-chart-compare.jfif)
 
 ## Installation Instructions
 - To install this visualization, download the .zip file below and deploy it in MicroStrategy Workstation or MicroStrategy Web.
