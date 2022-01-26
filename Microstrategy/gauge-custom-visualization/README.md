@@ -29,17 +29,20 @@ It supports several options for various gauge style
 ## Format options
 
 ### Minimum and Maximum
-You can set default value of min and max in format tab. 
+You can set default value of min and max in format tab.
+
 ![gauge-min-max](./images/gauge-min-max.jfif)
 
 **Start Angle and End Angle** : Decide where to start and end drawing gauge. 
 0 degree or 360 degree of gauge is right side and add degrees to anti-clockwise direction.
+
 ![gauge-angle](./images/gauge-angle.jfif)
 
 For example, start angle :180 and end angle : 0 will show half gauge.
 
 ### Size and Margin
 Margin will move gauge **center point** vertically or horizontally. Gauge size will shrink or magnify the gauge. This is  percentage value to widget size.
+
 ![gauge-margin](./images/gauge-margin.jfif)
 
 This option is useful when your gauge has small portion of circle like below picture .
@@ -95,4 +98,5 @@ Last updated: Aug 17, 2021
 
 ## Download attachments
 [EChartGauge.zip](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/gauge-custom-visualization/attachments/EChartGauge.zip)
+
 [EChartGauge.mstr](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/gauge-custom-visualization/attachments/eChart-Gauge-Sample.mstr)
