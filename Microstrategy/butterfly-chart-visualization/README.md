@@ -45,3 +45,6 @@ This visualization is both intended as sample code and provided as a convenience
 Published: Oct 1, 2021
 Last updated: Oct 1, 2021
 
+## Download attachment
+- [EChartButterfly.zip](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.zip)
+- [EChartButterfly.mstr](https://github.com/PrezSeah/galleryres/raw/main/Microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.mstr)
