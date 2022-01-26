@@ -48,3 +48,7 @@ Last updated: Oct 1, 2021
 ## Download attachments
 - [EChartButterfly.zip](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.zip)
 - [EChartButterfly.mstr](https://github.com/PrezSeah/galleryres/raw/main/microstrategy/butterfly-chart-visualization/attachments/EChartButterfly.mstr)
+
+## Connecting to the Business Self-Service Platform (MicroStrategy)
+
+https://bat-mstr-dev.cloud.microstrategy.com/MicroStrategy/servlet/mstrWeb
