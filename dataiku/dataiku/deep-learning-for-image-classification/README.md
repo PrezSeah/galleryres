@@ -11,22 +11,22 @@ First, we are going to classify these images using a pre-trained model. Then, we
 Start by looking at the flow. The inputs are a folder containing images to be classified, a folder containing a pre-trained deep learning model (see below), and a folder containing images to retrain the model.
 
 [**Explore here**](https://dsg.dss.bat.com/projects/LIONANDTIGER/flow/)
-![flow](https://github.com/PrezSeah/galleryres/raw/main/dataiku/deep-learning-for-image-classification/images/flow.png)
+![flow](https://github.com/PrezSeah/galleryres/raw/main/dataiku/dataiku/deep-learning-for-image-classification/images/flow.png)
 
 ### Downloading Pre-Trained Models
 The plugin includes a macro for downloading a pre-trained deep learning model. To add a pre-trained deep learning model to the flow, run the macro and look for the managed folder it creates in the flow.
 
 [**Explore here**](https://dsg.dss.bat.com/projects/LIONANDTIGER/managedfolder/Jv4WSAUt/view/)
-![pre-trained-model](https://github.com/PrezSeah/galleryres/raw/main/dataiku/deep-learning-for-image-classification/images/pre-trained-model.png)
+![pre-trained-model](https://github.com/PrezSeah/galleryres/raw/main/dataiku/dataiku/deep-learning-for-image-classification/images/pre-trained-model.png)
 
 ### Classifying images
 The plugin includes a recipe for classifying images with a trained model. It takes as inputs a folder of images to classify and a model for classifying them. The output dataset, with some light preparation, contains the predictions.
 
 [**Explore here**](https://dsg.dss.bat.com/projects/LIONANDTIGER/datasets/Classification_results/explore/)
-![classifying-images](https://github.com/PrezSeah/galleryres/raw/main/dataiku/deep-learning-for-image-classification/images/classifying-images.png)
+![classifying-images](https://github.com/PrezSeah/galleryres/raw/main/dataiku/dataiku/deep-learning-for-image-classification/images/classifying-images.png)
 
 ### Retraining a Model
 The plugin includes a recipe for retraining a model. It takes as inputs the pre-trained model, a folder of images to do the retraining, and a dataset of labels for the images. The output dataset, with some light preparation, contains the predictions.
 
 [**Explore here**](https://dsg.dss.bat.com/projects/LIONANDTIGER/datasets/Classification_after_retrain_results/explore/)
-![retraining-model](https://github.com/PrezSeah/galleryres/raw/main/dataiku/deep-learning-for-image-classification/images/retraining-model.png)
+![retraining-model](https://github.com/PrezSeah/galleryres/raw/main/dataiku/dataiku/deep-learning-for-image-classification/images/retraining-model.png)
