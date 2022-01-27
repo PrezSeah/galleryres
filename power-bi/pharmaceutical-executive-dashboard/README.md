@@ -18,5 +18,5 @@ The bar chart and matrix on the third level illustrate details of every departme
 We have made an attempt to develop a concise one-page report showing the most relevant data. 
 
 ## Reference
-- Download [pharmaceutical.pbix](https://raw.githubusercontent.com/PrezSeah/galleryres/main/power-bi/pharmaceutical-executive-dashboard/attachments/pharmaceutical20.pbix?raw=true) here.
+- Download [pharmaceutical.pbix](https://raw.githubusercontent.com/PrezSeah/galleryres/main/power-bi/pharmaceutical-executive-dashboard/attachments/pharmaceutical.pbix?raw=true) here.
 
