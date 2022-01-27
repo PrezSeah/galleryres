@@ -1,22 +1,12 @@
-# International Pharmaceutical Company Executive Dashboard
+# Sales And Return Dashboard
 
-![pharmaceutical-executive-dashboard](https://raw.githubusercontent.com/PrezSeah/galleryres/main/power-bi/pharmaceutical-executive-dashboard/images/pharmaceutical.PNG)
+![pharmaceutical-executive-dashboard](https://raw.githubusercontent.com/PrezSeah/galleryres/main/power-bi/sales-and-returns/images/Sales%20and%20Returns.png)
 
-This report was made for the international Pharmaceutical company. It is aimed at monitoring business processes and staff performance. The company offices are distributed throughout Europe and the European part of Russia. Sales managers in offices contact local pharmacists and promote the company’s products.
+This Interactive Sales & Return Analytics Dashboard of a Skateboard Company allows you to drill into the data and explore all the factors that impact Sales and Returns. It also analyzes what types of products are most popular in different regions and provides insights into areas to focus marketing efforts. 
 
- 
 
-The dashboard is performed following a three-level logical structure. Cards located on the first one represent Key Performance Indicators. We highlighted the achievement of sales and networking targets as well as the percentage of positive responses and number of contacts per day. Sales target defines monetary sales value, networking one - the number of potential clients has been called. Positive responses percentage is those clients who showed company’s product commitment. 
 
- 
-The map and Tornado visual are located below, on the second level. There are cities highlighted by green and red on the map. Red ones are places where sales targets were not achieved. Tornado is showed the distribution of sales and contacts targets achievement by specializations. 
-
- 
-The bar chart and matrix on the third level illustrate details of every department and sales managers’ results. 
-
- 
-We have made an attempt to develop a concise one-page report showing the most relevant data. 
+	This Report is loaded with Power BI Features that will allow the user to understand a large amount of data with an easy to use interface. By integrating Power Apps within this Power BI Report, the users are able to get from Data to Insights to Action rapidly.
 
 ## Reference
-- Download [pharmaceutical.pbix](https://raw.githubusercontent.com/PrezSeah/galleryres/main/power-bi/pharmaceutical-executive-dashboard/attachments/pharmaceutical20.pbix?raw=true) here.
-
+- Download [sales-and-returns.pbix](https://raw.githubusercontent.com/PrezSeah/galleryres/main/power-bi/sales-and-returns/attachments/Sales%20and%20Returns.pbix?raw=true) here.
