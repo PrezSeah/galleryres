@@ -9,3 +9,8 @@ This notebook demonstrates how to use MirroredStrategyRunner in spark-tensorflow
 -> Databricks Runtime ML 7.0 and above
 
 -> (Recommended) GPU instances
+
+
+# Notebook Reference Link
+
+https://databricks.com/notebooks/gallery/TensorFlow2DistributedTraining.html
