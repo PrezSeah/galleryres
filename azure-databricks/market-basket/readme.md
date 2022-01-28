@@ -30,3 +30,8 @@ Data engineering pipelines are commonly comprised of these components:
 **Review Association Rules**: Review the generated association rules
 
 ![](readme_files/image004.jpg)
+
+
+# Notebook Reference Link
+
+https://databricks.com/notebooks/gallery/MarketBasket.html
