@@ -5,3 +5,6 @@ This notebook illustrates how to use the MLflow logging API to start an MLflow r
 If you are using a cluster running Databricks Runtime, you must install the mlflow library from PyPI. See Cmd 3.
 If you are using a cluster running Databricks Runtime ML, the mlflow library is already installed.
 This notebook creates a Random Forest model on a simple dataset and uses the MLflow Tracking API to log the model and selected model parameters and metrics.
+
+# Notebook Reference Link
+https://databricks.com/notebooks/gallery/MLflowLoggingAPIPythonQuickstart.html
