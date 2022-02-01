@@ -19,7 +19,7 @@ The machine learning based API enables:
 *   _Scalable and timely detection:_ The traditional way of monitoring with preset thresholds set by experts' domain knowledge are costly and not scalable to millions of dynamically changing data sets. The anomaly detection models in this API are learned and models are tuned automatically from both historical and real-time data.
 *   _Proactive and actionable detection:_ Slow trend and level change detection can be applied for early anomaly detection. The early abnormal signals detected can be used to direct humans to investigate and act on the problem areas.  In addition, root cause analysis models and alerting tools can be developed on top of this anomaly detection API service.
 
-![](azureml-anomaly-detection-description_files/image001.jpg)
+![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/anomaly-detection-API/azureml-anomaly-detection-description_files/image001.jpg)
 
 **Model Metadata**
 
