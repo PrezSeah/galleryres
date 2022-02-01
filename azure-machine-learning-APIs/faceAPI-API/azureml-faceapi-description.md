@@ -11,28 +11,28 @@ Face detection with attributes extraction
 
 You will get the detected faces with rectangles indicating the face positions and a series of face related attributes, include landmarks, pose, gender and age by giving an image.
 
-![](azureml-faceapi-description_files/image001.png)
+![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/faceAPI-API/azureml-faceapi-description_files/image001.png)
 
 Face Verification
 -----------------
 
 Given two detected faces, you will get result indicates whether the two requested faces belong to the same person.
 
-![](azureml-faceapi-description_files/image002.png)
+![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/faceAPI-API/azureml-faceapi-description_files/image002.png)
 
 Face Grouping
 -------------
 
 Provide service a set of unknown faces, it will automatically divide them into several groups based on similarity:
 
-![](azureml-faceapi-description_files/image003.png)
+![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/faceAPI-API/azureml-faceapi-description_files/image003.png)
 
 Face Identification
 -------------------
 
 You can use Face Identification to recognize persons' identities.
 
-![](azureml-faceapi-description_files/image004.png)
+![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/faceAPI-API/azureml-faceapi-description_files/image004.png)
 
 **Model Metadata**
 
