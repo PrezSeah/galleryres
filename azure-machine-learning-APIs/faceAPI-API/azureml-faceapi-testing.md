@@ -144,7 +144,7 @@ img.show()
 
  **Sample Output**
 
- ![](azureml-faceapi-testing_files/image003.jpg)
+ ![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/faceAPI-API/azureml-faceapi-testing_files/image003.png)
 
 **Other Applications**
 
