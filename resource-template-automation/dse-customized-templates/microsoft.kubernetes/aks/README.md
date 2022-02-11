@@ -1,4 +1,4 @@
-# Azure Container Service (AKS)
+# Azure Kubernetes Service (AKS)
 
 ![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.kubernetes/aks/PublicLastTestDate.svg)
 ![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.kubernetes/aks/PublicDeployment.svg)
