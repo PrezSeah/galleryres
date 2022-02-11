@@ -1,4 +1,4 @@
-# Deploy a app service plan and a basic Linux web app
+# Deploy an app service plan and a basic Linux web app
 
 ![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.web/webapp-basic-linux/PublicLastTestDate.svg)	
 ![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/quickstarts/microsoft.web/webapp-basic-linux/PublicDeployment.svg)	
