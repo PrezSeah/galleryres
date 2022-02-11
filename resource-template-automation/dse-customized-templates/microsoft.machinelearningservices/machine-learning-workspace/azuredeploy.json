@@ -34,6 +34,85 @@
           "metadata": {
             "description": "Specifies whether to reduce telemetry collection and enable additional encryption."
           }
+      },
+      "Tagging - CUST-CODE": {
+          "type": "string",
+          "defaultValue": "",
+          "metadata": {
+              "description": "Tagging value for CUST-CODE"
+          }
+      },
+      "Tagging - OWNER": {
+          "type": "string",
+          "defaultValue": "",
+          "metadata": {
+              "description": "Tagging value for OWNER"
+          }
+      },
+      "Tagging - RESOURCE-GROUP": {
+          "type": "string",
+          "defaultValue": "",
+          "metadata": {
+              "description": "Tagging value for RESOURCE-GROUP"
+          }
+      },
+      "Tagging - HUB-DATASCIENCE-FUNCTION": {
+          "type": "string",
+          "allowedValues": ["MARKETING",
+            "LEX",
+            "CORPORATE",
+            "FINANCE",
+            "OPERATIONS",
+            "PROCUREMENT",
+            "R&D"
+          ],
+          "metadata": {
+              "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+          }
+      },
+      "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+          "type": "string",
+          "allowedValues": ["MARKETING",
+            "LEX",
+            "CORPORATE",
+            "FINANCE",
+            "OPERATIONS",
+            "PROCUREMENT",
+            "R&D"
+          ],
+          "metadata": {
+              "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+          }
+      },
+      "Tagging - HUB-DATASCIENCE-USECASE": {
+          "type": "string",
+          "allowedValues": ["LEX-BRZ-AIT",
+            "MARKETING-BRZ-SOQ",
+            "MARKETING-AUS-PRICING-SOLUTION"
+          ],
+          "metadata": {
+              "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+          }
+      },
+      "Tagging - SPOKE-DATASCIENCE-USECASE": {
+          "type": "string",
+          "allowedValues": ["LEX-BRZ-AIT",
+            "MARKETING-BRZ-SOQ",
+            "MARKETING-AUS-PRICING-SOLUTION"
+          ],
+          "metadata": {
+              "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+          }
+      },
+      "Tagging - SPOKE": {
+          "type": "string",
+          "allowedValues": ["BRZ",
+            "ZRF",
+            "MYS"
+          ],
+          "metadata": {
+              "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+          }
       }
   },
   "variables": {
@@ -54,6 +133,85 @@
           "apiVersion": "2021-01-01",
           "name": "[variables('storageAccountName')]",
           "location": "[parameters('location')]",
+          "Tagging - CUST-CODE": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for CUST-CODE"
+              }
+          },
+          "Tagging - OWNER": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for OWNER"
+              }
+          },
+          "Tagging - RESOURCE-GROUP": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for RESOURCE-GROUP"
+              }
+          },
+          "Tagging - HUB-DATASCIENCE-FUNCTION": {
+              "type": "string",
+              "allowedValues": ["MARKETING",
+                "LEX",
+                "CORPORATE",
+                "FINANCE",
+                "OPERATIONS",
+                "PROCUREMENT",
+                "R&D"
+              ],
+              "metadata": {
+                  "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+              }
+          },
+          "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+              "type": "string",
+              "allowedValues": ["MARKETING",
+                "LEX",
+                "CORPORATE",
+                "FINANCE",
+                "OPERATIONS",
+                "PROCUREMENT",
+                "R&D"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+              }
+          },
+          "Tagging - HUB-DATASCIENCE-USECASE": {
+              "type": "string",
+              "allowedValues": ["LEX-BRZ-AIT",
+                "MARKETING-BRZ-SOQ",
+                "MARKETING-AUS-PRICING-SOLUTION"
+              ],
+              "metadata": {
+                  "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+              }
+          },
+          "Tagging - SPOKE-DATASCIENCE-USECASE": {
+              "type": "string",
+              "allowedValues": ["LEX-BRZ-AIT",
+                "MARKETING-BRZ-SOQ",
+                "MARKETING-AUS-PRICING-SOLUTION"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+              }
+          },
+          "Tagging - SPOKE": {
+              "type": "string",
+              "allowedValues": ["BRZ",
+                "ZRF",
+                "MYS"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+              }
+          },
           "sku": {
               "name": "Standard_RAGRS"
           },
@@ -78,6 +236,85 @@
           "apiVersion": "2021-04-01-preview",
           "name": "[variables('keyVaultName')]",
           "location": "[parameters('location')]",
+          "Tagging - CUST-CODE": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for CUST-CODE"
+              }
+          },
+          "Tagging - OWNER": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for OWNER"
+              }
+          },
+          "Tagging - RESOURCE-GROUP": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for RESOURCE-GROUP"
+              }
+          },
+          "Tagging - HUB-DATASCIENCE-FUNCTION": {
+              "type": "string",
+              "allowedValues": ["MARKETING",
+                "LEX",
+                "CORPORATE",
+                "FINANCE",
+                "OPERATIONS",
+                "PROCUREMENT",
+                "R&D"
+              ],
+              "metadata": {
+                  "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+              }
+          },
+          "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+              "type": "string",
+              "allowedValues": ["MARKETING",
+                "LEX",
+                "CORPORATE",
+                "FINANCE",
+                "OPERATIONS",
+                "PROCUREMENT",
+                "R&D"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+              }
+          },
+          "Tagging - HUB-DATASCIENCE-USECASE": {
+              "type": "string",
+              "allowedValues": ["LEX-BRZ-AIT",
+                "MARKETING-BRZ-SOQ",
+                "MARKETING-AUS-PRICING-SOLUTION"
+              ],
+              "metadata": {
+                  "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+              }
+          },
+          "Tagging - SPOKE-DATASCIENCE-USECASE": {
+              "type": "string",
+              "allowedValues": ["LEX-BRZ-AIT",
+                "MARKETING-BRZ-SOQ",
+                "MARKETING-AUS-PRICING-SOLUTION"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+              }
+          },
+          "Tagging - SPOKE": {
+              "type": "string",
+              "allowedValues": ["BRZ",
+                "ZRF",
+                "MYS"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+              }
+          },
           "properties": {
               "tenantId": "[variables('tenantId')]",
               "sku": {
@@ -93,6 +330,85 @@
           "apiVersion": "2020-02-02",
           "name": "[variables('applicationInsightsName')]",
           "location": "[parameters('location')]",
+          "Tagging - CUST-CODE": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for CUST-CODE"
+              }
+          },
+          "Tagging - OWNER": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for OWNER"
+              }
+          },
+          "Tagging - RESOURCE-GROUP": {
+              "type": "string",
+              "defaultValue": "",
+              "metadata": {
+                  "description": "Tagging value for RESOURCE-GROUP"
+              }
+          },
+          "Tagging - HUB-DATASCIENCE-FUNCTION": {
+              "type": "string",
+              "allowedValues": ["MARKETING",
+                "LEX",
+                "CORPORATE",
+                "FINANCE",
+                "OPERATIONS",
+                "PROCUREMENT",
+                "R&D"
+              ],
+              "metadata": {
+                  "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+              }
+          },
+          "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+              "type": "string",
+              "allowedValues": ["MARKETING",
+                "LEX",
+                "CORPORATE",
+                "FINANCE",
+                "OPERATIONS",
+                "PROCUREMENT",
+                "R&D"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+              }
+          },
+          "Tagging - HUB-DATASCIENCE-USECASE": {
+              "type": "string",
+              "allowedValues": ["LEX-BRZ-AIT",
+                "MARKETING-BRZ-SOQ",
+                "MARKETING-AUS-PRICING-SOLUTION"
+              ],
+              "metadata": {
+                  "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+              }
+          },
+          "Tagging - SPOKE-DATASCIENCE-USECASE": {
+              "type": "string",
+              "allowedValues": ["LEX-BRZ-AIT",
+                "MARKETING-BRZ-SOQ",
+                "MARKETING-AUS-PRICING-SOLUTION"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+              }
+          },
+          "Tagging - SPOKE": {
+              "type": "string",
+              "allowedValues": ["BRZ",
+                "ZRF",
+                "MYS"
+              ],
+              "metadata": {
+                  "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+              }
+          },
           "kind": "web",
           "properties": {
               "Application_Type": "web"
@@ -119,6 +435,85 @@
         },
         "name": "[variables('workspaceName')]",
         "location": "[parameters('location')]",
+        "Tagging - CUST-CODE": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Tagging value for CUST-CODE"
+            }
+        },
+        "Tagging - OWNER": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Tagging value for OWNER"
+            }
+        },
+        "Tagging - RESOURCE-GROUP": {
+            "type": "string",
+            "defaultValue": "",
+            "metadata": {
+                "description": "Tagging value for RESOURCE-GROUP"
+            }
+        },
+        "Tagging - HUB-DATASCIENCE-FUNCTION": {
+            "type": "string",
+            "allowedValues": ["MARKETING",
+              "LEX",
+              "CORPORATE",
+              "FINANCE",
+              "OPERATIONS",
+              "PROCUREMENT",
+              "R&D"
+            ],
+            "metadata": {
+                "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+            }
+        },
+        "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+            "type": "string",
+            "allowedValues": ["MARKETING",
+              "LEX",
+              "CORPORATE",
+              "FINANCE",
+              "OPERATIONS",
+              "PROCUREMENT",
+              "R&D"
+            ],
+            "metadata": {
+                "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+            }
+        },
+        "Tagging - HUB-DATASCIENCE-USECASE": {
+            "type": "string",
+            "allowedValues": ["LEX-BRZ-AIT",
+              "MARKETING-BRZ-SOQ",
+              "MARKETING-AUS-PRICING-SOLUTION"
+            ],
+            "metadata": {
+                "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+            }
+        },
+        "Tagging - SPOKE-DATASCIENCE-USECASE": {
+            "type": "string",
+            "allowedValues": ["LEX-BRZ-AIT",
+              "MARKETING-BRZ-SOQ",
+              "MARKETING-AUS-PRICING-SOLUTION"
+            ],
+            "metadata": {
+                "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+            }
+        },
+        "Tagging - SPOKE": {
+            "type": "string",
+            "allowedValues": ["BRZ",
+              "ZRF",
+              "MYS"
+            ],
+            "metadata": {
+                "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+            }
+        },
         "dependsOn": [
             "[variables('storageAccount')]",
             "[variables('keyVault')]",
