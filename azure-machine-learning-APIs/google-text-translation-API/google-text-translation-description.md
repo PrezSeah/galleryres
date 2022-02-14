@@ -63,7 +63,6 @@ translator = Translator()
 translations = {}
 
 for column in df.columns:
-
     # Unique elements of the column
     
     unique_elements = df[column].unique()
