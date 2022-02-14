@@ -39,16 +39,24 @@ https://pypi.org/project/googletrans/
 ## Usage
 
 #install googletrans using pip
+
 !pip install googletrans
 
 #Importing the necessary libraries
+
 import pandas as pd
+
 import googletrans
+
 from googletrans import Translator
 
+
 #Reading and storing the CSV file as a dataframe
+
 df = pd.read_csv('/content/Vegetables_names_in_hindi.csv')
+
 df.head(10)
+
 
 translator = Translator()
 translations = {}
