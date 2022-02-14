@@ -20,7 +20,7 @@ Auto Language Detection: Automatically detect the language of the source text wh
 
 Dictionary: Use the Dictionary Lookup or Dictionary Examples operations from the Text Translation feature to display alternative translations from or to English and examples of words in context.
 
-
+![](https://raw.githubusercontent.com/PrezSeah/galleryres/main/azure-machine-learning-APIs/azure-text-translation-API/cognitive-text-translation.png)
 
 **Model Metadata**
 
