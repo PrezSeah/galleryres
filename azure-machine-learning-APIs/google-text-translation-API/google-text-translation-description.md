@@ -59,18 +59,29 @@ df.head(10)
 
 
 translator = Translator()
+
 translations = {}
+
 for column in df.columns:
+
     # Unique elements of the column
+    
     unique_elements = df[column].unique()
+    
     for element in unique_elements:
+    
         # Adding all the translations to a dictionary (translations)
+        
         translations[element] = translator.translate(element).text
+        
 translations
 
 
+
 #Replacing all the translated words from the dictionary to the original dataframe
+
 df.replace(translations, inplace = True)
+
 df.head(10)
 
 
