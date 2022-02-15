@@ -175,84 +175,15 @@
           "apiVersion": "2020-03-01",
           "name": "[parameters('clusterName')]",
           "location": "[parameters('location')]",
-          "Tagging - CUST-CODE": {
-              "type": "string",
-              "defaultValue": "",
-              "metadata": {
-                  "description": "Tagging value for CUST-CODE"
-              }
-          },
-          "Tagging - OWNER": {
-              "type": "string",
-              "defaultValue": "",
-              "metadata": {
-                  "description": "Tagging value for OWNER"
-              }
-          },
-          "Tagging - RESOURCE-GROUP": {
-              "type": "string",
-              "defaultValue": "",
-              "metadata": {
-                  "description": "Tagging value for RESOURCE-GROUP"
-              }
-          },
-          "Tagging - HUB-DATASCIENCE-FUNCTION": {
-              "type": "string",
-              "allowedValues": ["MARKETING",
-                "LEX",
-                "CORPORATE",
-                "FINANCE",
-                "OPERATIONS",
-                "PROCUREMENT",
-                "R&D"
-              ],
-              "metadata": {
-                  "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
-              }
-          },
-          "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
-              "type": "string",
-              "allowedValues": ["MARKETING",
-                "LEX",
-                "CORPORATE",
-                "FINANCE",
-                "OPERATIONS",
-                "PROCUREMENT",
-                "R&D"
-              ],
-              "metadata": {
-                  "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
-              }
-          },
-          "Tagging - HUB-DATASCIENCE-USECASE": {
-              "type": "string",
-              "allowedValues": ["LEX-BRZ-AIT",
-                "MARKETING-BRZ-SOQ",
-                "MARKETING-AUS-PRICING-SOLUTION"
-              ],
-              "metadata": {
-                  "description": "Tagging value for HUB-DATASCIENCE-USECASE"
-              }
-          },
-          "Tagging - SPOKE-DATASCIENCE-USECASE": {
-              "type": "string",
-              "allowedValues": ["LEX-BRZ-AIT",
-                "MARKETING-BRZ-SOQ",
-                "MARKETING-AUS-PRICING-SOLUTION"
-              ],
-              "metadata": {
-                  "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
-              }
-          },
-          "Tagging - SPOKE": {
-              "type": "string",
-              "allowedValues": ["BRZ",
-                "ZRF",
-                "MYS"
-              ],
-              "metadata": {
-                  "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
-              }
+          "tags": {
+            "CUST-CODE":                  "[parameters('Tagging - CUST-CODE')]",
+            "OWNER":                      "[parameters('Tagging - OWNER')]",
+            "RESOURCE-GROUP":             "[parameters('Tagging - RESOURCE-GROUP')]",
+            "HUB-DATASCIENCE-FUNCTION":   "[parameters('Tagging - HUB-DATASCIENCE-FUNCTION')]",
+            "SPOKE-DATASCIENCE-FUNCTION": "[parameters('Tagging - SPOKE-DATASCIENCE-FUNCTION')]",
+            "HUB-DATASCIENCE-USECASE":    "[parameters('Tagging - HUB-DATASCIENCE-USECASE')]",
+            "SPOKE-DATASCIENCE-USECASE":  "[parameters('Tagging - SPOKE-DATASCIENCE-USECASE')]",
+            "SPOKE":                      "[parameters('Tagging - SPOKE')]"
           },
           "sku": {
               "name": "Basic",
