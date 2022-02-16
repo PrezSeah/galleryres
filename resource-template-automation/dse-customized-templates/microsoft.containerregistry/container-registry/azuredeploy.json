@@ -117,10 +117,6 @@
     },
     "Tagging - SPOKE": {
         "type": "string",
-        "allowedValues": ["BRZ",
-          "ZRF",
-          "MYS"
-        ],
         "metadata": {
             "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
         }
