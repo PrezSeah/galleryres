@@ -9,15 +9,15 @@
     }
   },
   "parameters": {
-    "acrName": {
+    "ACRName": {
       "type": "string",
       "metadata": {
-        "description": "Name of the azure container registry (must be globally unique)"
+        "description": "Name of the Azure Container Registry. Resource names may contain alpha numeric characters only, must be between 5 and 50 characters and globally unique)"
       },
       "maxLength": 50,
       "minLength": 5
     },
-    "acrAdminUserEnabled": {
+    "ACRAdminUserEnabled": {
       "type": "bool",
       "defaultValue": false,
       "metadata": {
@@ -131,7 +131,7 @@
     {
       "type": "Microsoft.ContainerRegistry/registries",
       "apiVersion": "2019-12-01-preview",
-      "name": "[parameters('acrName')]",
+      "name": "[parameters('ACRName')]",
       "location": "[parameters('location')]",
       "tags": {
         "CUST-CODE":                  "[parameters('Tagging - CUST-CODE')]",
@@ -147,14 +147,14 @@
         "name": "[parameters('acrSku')]"
       },
       "properties": {
-        "adminUserEnabled": "[parameters('acrAdminUserEnabled')]"
+        "adminUserEnabled": "[parameters('ACRAdminUserEnabled')]"
       }
     }
   ],
   "outputs": {
     "acrLoginServer": {
       "type": "string",
-      "value": "[reference(resourceId('Microsoft.ContainerRegistry/registries', parameters('acrName'))).loginServer]"
+      "value": "[reference(resourceId('Microsoft.ContainerRegistry/registries', parameters('ACRName'))).loginServer]"
     }
   }
 }
