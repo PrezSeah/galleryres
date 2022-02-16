@@ -64,7 +64,8 @@
             "FINANCE",
             "OPERATIONS",
             "PROCUREMENT",
-            "R&D"
+            "R&D",
+            "N/A"
           ],
           "metadata": {
               "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
@@ -78,7 +79,8 @@
             "FINANCE",
             "OPERATIONS",
             "PROCUREMENT",
-            "R&D"
+            "R&D",
+            "N/A"
           ],
           "metadata": {
               "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
@@ -88,7 +90,8 @@
           "type": "string",
           "allowedValues": ["LEX-BRZ-AIT",
             "MARKETING-BRZ-SOQ",
-            "MARKETING-AUS-PRICING-SOLUTION"
+            "MARKETING-AUS-PRICING-SOLUTION",
+            "N/A"
           ],
           "metadata": {
               "description": "Tagging value for HUB-DATASCIENCE-USECASE"
@@ -98,7 +101,8 @@
           "type": "string",
           "allowedValues": ["LEX-BRZ-AIT",
             "MARKETING-BRZ-SOQ",
-            "MARKETING-AUS-PRICING-SOLUTION"
+            "MARKETING-AUS-PRICING-SOLUTION",
+            "N/A"
           ],
           "metadata": {
               "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"

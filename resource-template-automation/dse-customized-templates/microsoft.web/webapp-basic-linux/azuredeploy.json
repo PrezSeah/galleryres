@@ -77,7 +77,8 @@
           "FINANCE",
           "OPERATIONS",
           "PROCUREMENT",
-          "R&D"
+          "R&D",
+          "N/A"
         ],
         "metadata": {
             "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
@@ -91,7 +92,8 @@
           "FINANCE",
           "OPERATIONS",
           "PROCUREMENT",
-          "R&D"
+          "R&D",
+          "N/A"
         ],
         "metadata": {
             "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
@@ -101,7 +103,8 @@
         "type": "string",
         "allowedValues": ["LEX-BRZ-AIT",
           "MARKETING-BRZ-SOQ",
-          "MARKETING-AUS-PRICING-SOLUTION"
+          "MARKETING-AUS-PRICING-SOLUTION",
+          "N/A"
         ],
         "metadata": {
             "description": "Tagging value for HUB-DATASCIENCE-USECASE"
@@ -111,7 +114,8 @@
         "type": "string",
         "allowedValues": ["LEX-BRZ-AIT",
           "MARKETING-BRZ-SOQ",
-          "MARKETING-AUS-PRICING-SOLUTION"
+          "MARKETING-AUS-PRICING-SOLUTION",
+          "N/A"
         ],
         "metadata": {
             "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
@@ -119,10 +123,6 @@
     },
     "Tagging - SPOKE": {
         "type": "string",
-        "allowedValues": ["BRZ",
-          "ZRF",
-          "MYS"
-        ],
         "metadata": {
             "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
         }
