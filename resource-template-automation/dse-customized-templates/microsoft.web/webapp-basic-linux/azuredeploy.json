@@ -10,6 +10,12 @@
       },
       "minLength": 2
     },
+    "environment": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the name of the environment."
+      }
+    },
     "sku": {
       "type": "string",
       "defaultValue": "B1",

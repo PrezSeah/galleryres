@@ -24,6 +24,22 @@
           "description": "Specifies the location of the Azure Machine Learning workspace and dependent resources."
         }
       },
+      "storageAccountSKUName": {
+        "type": "string",
+        "allowedValues": [
+          "Premium_LRS",
+          "Premium_ZRS",
+          "Standard_GRS",
+          "Standard_GZRS",
+          "Standard_LRS",
+          "Standard_RAGRS",
+          "Standard_RAGZRS",
+          "Standard_ZRS"
+        ],
+        "metadata": {
+          "description": "Specifies the location of the Azure Machine Learning workspace and dependent resources."
+        }
+      },
       "hbi_workspace":{
         "type": "string",
         "defaultValue": "false",
@@ -120,7 +136,7 @@
       "storageAccountName": "[concat('st', parameters('name'), parameters('environment'))]",
       "keyVaultName": "[concat('kv-', parameters('name'), '-', parameters('environment'))]",
       "applicationInsightsName": "[concat('appi-', parameters('name'), '-', parameters('environment'))]",
-      "containerRegistryName": "[concat('cr', parameters('name'), parameters('environment'))]",
+      "containerRegistryName": "[concat('acr', parameters('name'), parameters('environment'))]",
       "workspaceName": "[concat('mlw', parameters('name'), parameters('environment'))]",
       "storageAccount": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
       "keyVault": "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]",
@@ -142,6 +158,9 @@
             "HUB-DATASCIENCE-USECASE":    "[parameters('Tagging - HUB-DATASCIENCE-USECASE')]",
             "SPOKE-DATASCIENCE-USECASE":  "[parameters('Tagging - SPOKE-DATASCIENCE-USECASE')]",
             "SPOKE":                      "[parameters('Tagging - SPOKE')]"
+          },
+          "sku": {
+            "name": "[parameters('storageAccountSKUName')]"
           },
           "kind": "StorageV2",
           "properties": {
@@ -189,84 +208,15 @@
           "apiVersion": "2020-02-02",
           "name": "[variables('applicationInsightsName')]",
           "location": "[parameters('location')]",
-          "Tagging - CUST-CODE": {
-              "type": "string",
-              "defaultValue": "",
-              "metadata": {
-                  "description": "Tagging value for CUST-CODE"
-              }
-          },
-          "Tagging - OWNER": {
-              "type": "string",
-              "defaultValue": "",
-              "metadata": {
-                  "description": "Tagging value for OWNER"
-              }
-          },
-          "Tagging - RESOURCE-GROUP": {
-              "type": "string",
-              "defaultValue": "",
-              "metadata": {
-                  "description": "Tagging value for RESOURCE-GROUP"
-              }
-          },
-          "Tagging - HUB-DATASCIENCE-FUNCTION": {
-              "type": "string",
-              "allowedValues": ["MARKETING",
-                "LEX",
-                "CORPORATE",
-                "FINANCE",
-                "OPERATIONS",
-                "PROCUREMENT",
-                "R&D"
-              ],
-              "metadata": {
-                  "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
-              }
-          },
-          "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
-              "type": "string",
-              "allowedValues": ["MARKETING",
-                "LEX",
-                "CORPORATE",
-                "FINANCE",
-                "OPERATIONS",
-                "PROCUREMENT",
-                "R&D"
-              ],
-              "metadata": {
-                  "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
-              }
-          },
-          "Tagging - HUB-DATASCIENCE-USECASE": {
-              "type": "string",
-              "allowedValues": ["LEX-BRZ-AIT",
-                "MARKETING-BRZ-SOQ",
-                "MARKETING-AUS-PRICING-SOLUTION"
-              ],
-              "metadata": {
-                  "description": "Tagging value for HUB-DATASCIENCE-USECASE"
-              }
-          },
-          "Tagging - SPOKE-DATASCIENCE-USECASE": {
-              "type": "string",
-              "allowedValues": ["LEX-BRZ-AIT",
-                "MARKETING-BRZ-SOQ",
-                "MARKETING-AUS-PRICING-SOLUTION"
-              ],
-              "metadata": {
-                  "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
-              }
-          },
-          "Tagging - SPOKE": {
-              "type": "string",
-              "allowedValues": ["BRZ",
-                "ZRF",
-                "MYS"
-              ],
-              "metadata": {
-                  "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
-              }
+          "tags": {
+            "CUST-CODE":                  "[parameters('Tagging - CUST-CODE')]",
+            "OWNER":                      "[parameters('Tagging - OWNER')]",
+            "RESOURCE-GROUP":             "[parameters('Tagging - RESOURCE-GROUP')]",
+            "HUB-DATASCIENCE-FUNCTION":   "[parameters('Tagging - HUB-DATASCIENCE-FUNCTION')]",
+            "SPOKE-DATASCIENCE-FUNCTION": "[parameters('Tagging - SPOKE-DATASCIENCE-FUNCTION')]",
+            "HUB-DATASCIENCE-USECASE":    "[parameters('Tagging - HUB-DATASCIENCE-USECASE')]",
+            "SPOKE-DATASCIENCE-USECASE":  "[parameters('Tagging - SPOKE-DATASCIENCE-USECASE')]",
+            "SPOKE":                      "[parameters('Tagging - SPOKE')]"
           },
           "kind": "web",
           "properties": {
@@ -282,6 +232,16 @@
         "name": "[variables('containerRegistryName')]",
         "apiVersion": "2019-12-01-preview",
         "location": "[parameters('location')]",
+        "tags": {
+          "CUST-CODE":                  "[parameters('Tagging - CUST-CODE')]",
+          "OWNER":                      "[parameters('Tagging - OWNER')]",
+          "RESOURCE-GROUP":             "[parameters('Tagging - RESOURCE-GROUP')]",
+          "HUB-DATASCIENCE-FUNCTION":   "[parameters('Tagging - HUB-DATASCIENCE-FUNCTION')]",
+          "SPOKE-DATASCIENCE-FUNCTION": "[parameters('Tagging - SPOKE-DATASCIENCE-FUNCTION')]",
+          "HUB-DATASCIENCE-USECASE":    "[parameters('Tagging - HUB-DATASCIENCE-USECASE')]",
+          "SPOKE-DATASCIENCE-USECASE":  "[parameters('Tagging - SPOKE-DATASCIENCE-USECASE')]",
+          "SPOKE":                      "[parameters('Tagging - SPOKE')]"
+        },
         "properties": {
             "adminUserEnabled": true
         }
@@ -294,84 +254,15 @@
         },
         "name": "[variables('workspaceName')]",
         "location": "[parameters('location')]",
-        "Tagging - CUST-CODE": {
-            "type": "string",
-            "defaultValue": "",
-            "metadata": {
-                "description": "Tagging value for CUST-CODE"
-            }
-        },
-        "Tagging - OWNER": {
-            "type": "string",
-            "defaultValue": "",
-            "metadata": {
-                "description": "Tagging value for OWNER"
-            }
-        },
-        "Tagging - RESOURCE-GROUP": {
-            "type": "string",
-            "defaultValue": "",
-            "metadata": {
-                "description": "Tagging value for RESOURCE-GROUP"
-            }
-        },
-        "Tagging - HUB-DATASCIENCE-FUNCTION": {
-            "type": "string",
-            "allowedValues": ["MARKETING",
-              "LEX",
-              "CORPORATE",
-              "FINANCE",
-              "OPERATIONS",
-              "PROCUREMENT",
-              "R&D"
-            ],
-            "metadata": {
-                "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
-            }
-        },
-        "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
-            "type": "string",
-            "allowedValues": ["MARKETING",
-              "LEX",
-              "CORPORATE",
-              "FINANCE",
-              "OPERATIONS",
-              "PROCUREMENT",
-              "R&D"
-            ],
-            "metadata": {
-                "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
-            }
-        },
-        "Tagging - HUB-DATASCIENCE-USECASE": {
-            "type": "string",
-            "allowedValues": ["LEX-BRZ-AIT",
-              "MARKETING-BRZ-SOQ",
-              "MARKETING-AUS-PRICING-SOLUTION"
-            ],
-            "metadata": {
-                "description": "Tagging value for HUB-DATASCIENCE-USECASE"
-            }
-        },
-        "Tagging - SPOKE-DATASCIENCE-USECASE": {
-            "type": "string",
-            "allowedValues": ["LEX-BRZ-AIT",
-              "MARKETING-BRZ-SOQ",
-              "MARKETING-AUS-PRICING-SOLUTION"
-            ],
-            "metadata": {
-                "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
-            }
-        },
-        "Tagging - SPOKE": {
-            "type": "string",
-            "allowedValues": ["BRZ",
-              "ZRF",
-              "MYS"
-            ],
-            "metadata": {
-                "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
-            }
+        "tags": {
+          "CUST-CODE":                  "[parameters('Tagging - CUST-CODE')]",
+          "OWNER":                      "[parameters('Tagging - OWNER')]",
+          "RESOURCE-GROUP":             "[parameters('Tagging - RESOURCE-GROUP')]",
+          "HUB-DATASCIENCE-FUNCTION":   "[parameters('Tagging - HUB-DATASCIENCE-FUNCTION')]",
+          "SPOKE-DATASCIENCE-FUNCTION": "[parameters('Tagging - SPOKE-DATASCIENCE-FUNCTION')]",
+          "HUB-DATASCIENCE-USECASE":    "[parameters('Tagging - HUB-DATASCIENCE-USECASE')]",
+          "SPOKE-DATASCIENCE-USECASE":  "[parameters('Tagging - SPOKE-DATASCIENCE-USECASE')]",
+          "SPOKE":                      "[parameters('Tagging - SPOKE')]"
         },
         "dependsOn": [
             "[variables('storageAccount')]",

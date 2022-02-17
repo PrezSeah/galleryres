@@ -8,12 +8,21 @@
               "description": "The name of the Managed Cluster resource."
           }
       },
+      "environment": {
+        "type": "string",
+        "metadata": {
+          "description": "Specifies the name of the environment."
+        }
+      },
       "location": {
-          "type": "string",
-          "defaultValue": "[resourceGroup().location]",
-          "metadata": {
-              "description": "The location of the Managed Cluster resource."
-          }
+        "type": "string",
+        "allowedValues": [
+          "northeurope",
+          "westeurope"
+        ],
+        "metadata": {
+          "description": "The location of the Managed Cluster resource."
+        }
       },
       "osDiskSizeGB": {
           "type": "int",
@@ -82,6 +91,7 @@
       },
       "sshRSAPublicKey": {
           "type": "string",
+          "defaultValue": "",
           "metadata": {
               "description": "Configure all linux machines with the SSH RSA public key string. Your key should include three parts, for example 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'"
           }

@@ -17,6 +17,12 @@
       "maxLength": 50,
       "minLength": 5
     },
+    "environment": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the name of the environment."
+      }
+    },
     "ACRAdminUserEnabled": {
       "type": "bool",
       "defaultValue": false,
@@ -34,7 +40,7 @@
         "description": "Location for all resources."
       }
     },
-    "acrSku": {
+    "ACRSku": {
       "type": "string",
       "defaultValue": "Basic",
       "metadata": {
@@ -144,7 +150,7 @@
         "SPOKE":                      "[parameters('Tagging - SPOKE')]"
       },
       "sku": {
-        "name": "[parameters('acrSku')]"
+        "name": "[parameters('ACRSku')]"
       },
       "properties": {
         "adminUserEnabled": "[parameters('ACRAdminUserEnabled')]"
