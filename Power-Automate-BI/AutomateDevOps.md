@@ -1,3 +1,9 @@
+---
+noteId: "640c8a108fc711ecb57c076a5a9176f2"
+tags: []
+
+---
+
 # Automate DevOps Using Power Automate
 
 Automatically create work item in Azure DevOps as creating tasks can take time away from Dev team, depleting capacity that would be better to automate.
