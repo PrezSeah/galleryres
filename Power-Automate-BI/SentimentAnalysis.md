@@ -35,6 +35,8 @@ Below is the report using above data in Power BI that is more useful in analysis
 
 ![Result](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ResultSentiment.JPG)
 
+## Download Template
+![Template](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/PowerAutomateFlows/SentimentAnalysis.zip)
 
 ## Reference links
 * https://radacad.com/sentiment-analysis-application-microsoft-power-automate-power-apps-and-ai-builder-part-1
