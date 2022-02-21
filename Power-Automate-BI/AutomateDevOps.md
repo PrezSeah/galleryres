@@ -46,8 +46,23 @@ Follow the below step.
 
   ![No Condition](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/NoCondition.JPG)
 
+
 ## Download Template
 * (https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/PowerAutomateFlows/AutomateDevOps.zip)
+
+## Import a Downloaded Template
+* Sign into Power Automate, and then select Solutions from the navigation bar on the left side of the screen.
+  ![Solution](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution1.JPG)
+* Select Import.
+  ![Import](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution2.JPG)
+* Select Browse from the Import a solution page that opens.
+* Find, and then select the solution that you want to import.
+* Select Open.
+You should now see the Select Solution Package page similar to this image:
+![Open](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution3.JPG)
+* Select Next.
+If there are no errors, the importation completes within a few moments.
+![Next](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution4.JPG)
 
 ## Reference Link
 * https://powerobjects.com/flow/automation-using-flow-and-azure-devops/

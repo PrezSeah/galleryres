@@ -38,6 +38,19 @@ Below is the report using above data in Power BI that is more useful in analysis
 ## Download Template
 * (https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/PowerAutomateFlows/SentimentAnalysis.zip)
 
+## Import a Downloaded Template
+* Sign into Power Automate, and then select Solutions from the navigation bar on the left side of the screen.
+  ![Solution](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution1.JPG)
+* Select Import.
+  ![Import](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution2.JPG)
+* Select Browse from the Import a solution page that opens.
+* Find, and then select the solution that you want to import.
+* Select Open.
+You should now see the Select Solution Package page similar to this image:
+![Open](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution3.JPG)
+* Select Next.
+If there are no errors, the importation completes within a few moments.
+![Next](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution4.JPG)
 ## Reference links
 * https://radacad.com/sentiment-analysis-application-microsoft-power-automate-power-apps-and-ai-builder-part-1
 * https://www.ignatiuz.com/blog/power-platform/sentiment-analysis-with-power-automate-and-ai-builder/
