@@ -2,134 +2,134 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-      "name": {
-        "type": "string",
-        "metadata": {
-          "description": "Specifies the name of the deployment."
-        }
-      },
-      "environment": {
-        "type": "string",
-        "metadata": {
-          "description": "Specifies the name of the environment."
-        }
-      },
-      "location": {
-        "type": "string",
-        "allowedValues": [
-          "northeurope",
-          "westeurope"
-        ],
-        "metadata": {
-          "description": "Specifies the location of the Azure Machine Learning workspace and dependent resources."
-        }
-      },
-      "storageAccountSKUName": {
-        "type": "string",
-        "allowedValues": [
-          "Premium_LRS",
-          "Premium_ZRS",
-          "Standard_GRS",
-          "Standard_GZRS",
-          "Standard_LRS",
-          "Standard_RAGRS",
-          "Standard_RAGZRS",
-          "Standard_ZRS"
-        ],
-        "metadata": {
-          "description": "Specifies the location of the Azure Machine Learning workspace and dependent resources."
-        }
-      },
-      "hbi_workspace":{
-        "type": "string",
-        "defaultValue": "false",
-          "allowedValues": [
-            "false",
-            "true"
-          ],
-          "metadata": {
-            "description": "Specifies whether to reduce telemetry collection and enable additional encryption."
-          }
-      },
-      "Tagging - CUST-CODE": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Tagging value for CUST-CODE"
-          }
-      },
-      "Tagging - OWNER": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Tagging value for OWNER"
-          }
-      },
-      "Tagging - RESOURCE-GROUP": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Tagging value for RESOURCE-GROUP"
-          }
-      },
-      "Tagging - HUB-DATASCIENCE-FUNCTION": {
-          "type": "string",
-          "allowedValues": ["MARKETING",
-            "LEX",
-            "CORPORATE",
-            "FINANCE",
-            "OPERATIONS",
-            "PROCUREMENT",
-            "R&D",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
-          }
-      },
-      "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
-          "type": "string",
-          "allowedValues": ["MARKETING",
-            "LEX",
-            "CORPORATE",
-            "FINANCE",
-            "OPERATIONS",
-            "PROCUREMENT",
-            "R&D",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
-          }
-      },
-      "Tagging - HUB-DATASCIENCE-USECASE": {
-          "type": "string",
-          "allowedValues": ["LEX-BRZ-AIT",
-            "MARKETING-BRZ-SOQ",
-            "MARKETING-AUS-PRICING-SOLUTION",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for HUB-DATASCIENCE-USECASE"
-          }
-      },
-      "Tagging - SPOKE-DATASCIENCE-USECASE": {
-          "type": "string",
-          "allowedValues": ["LEX-BRZ-AIT",
-            "MARKETING-BRZ-SOQ",
-            "MARKETING-AUS-PRICING-SOLUTION",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
-          }
-      },
-      "Tagging - SPOKE": {
-          "type": "string",
-          "metadata": {
-              "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
-          }
+    "name": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the name of the deployment."
       }
+    },
+    "environment": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the name of the environment."
+      }
+    },
+    "location": {
+      "type": "string",
+      "allowedValues": [
+        "northeurope",
+        "westeurope"
+      ],
+      "metadata": {
+        "description": "Specifies the location of the Azure Machine Learning workspace and dependent resources."
+      }
+    },
+    "storageAccountSKUName": {
+      "type": "string",
+      "allowedValues": [
+        "Premium_LRS",
+        "Premium_ZRS",
+        "Standard_GRS",
+        "Standard_GZRS",
+        "Standard_LRS",
+        "Standard_RAGRS",
+        "Standard_RAGZRS",
+        "Standard_ZRS"
+      ],
+      "metadata": {
+        "description": "Specifies the location of the Azure Machine Learning workspace and dependent resources."
+      }
+    },
+    "hbi_workspace":{
+      "type": "string",
+      "defaultValue": "false",
+        "allowedValues": [
+          "false",
+          "true"
+        ],
+        "metadata": {
+          "description": "Specifies whether to reduce telemetry collection and enable additional encryption."
+        }
+    },
+    "Tagging - SPOKE": {
+      "type": "string",
+      "metadata": {
+        "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+      }
+    },
+    "Tagging - CUST-CODE": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for CUST-CODE"
+      }
+    },
+    "Tagging - OWNER": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for OWNER"
+      }
+    },
+    "Tagging - RESOURCE-GROUP": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for RESOURCE-GROUP"
+      }
+    },
+    "Tagging - HUB-DATASCIENCE-FUNCTION": {
+      "type": "string",
+      "allowedValues": ["MARKETING",
+        "LEX",
+        "CORPORATE",
+        "FINANCE",
+        "OPERATIONS",
+        "PROCUREMENT",
+        "R&D",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+      }
+    },
+    "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+      "type": "string",
+      "allowedValues": ["MARKETING",
+        "LEX",
+        "CORPORATE",
+        "FINANCE",
+        "OPERATIONS",
+        "PROCUREMENT",
+        "R&D",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+      }
+    },
+    "Tagging - HUB-DATASCIENCE-USECASE": {
+      "type": "string",
+      "allowedValues": ["LEX-BRZ-AIT",
+        "MARKETING-BRZ-SOQ",
+        "MARKETING-AUS-PRICING-SOLUTION",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+      }
+    },
+    "Tagging - SPOKE-DATASCIENCE-USECASE": {
+      "type": "string",
+      "allowedValues": ["LEX-BRZ-AIT",
+        "MARKETING-BRZ-SOQ",
+        "MARKETING-AUS-PRICING-SOLUTION",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+      }
+    }
   },
   "variables": {
       "tenantId": "[subscription().tenantId]",

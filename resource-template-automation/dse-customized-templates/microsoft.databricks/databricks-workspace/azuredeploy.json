@@ -39,94 +39,94 @@
         "description": "The pricing tier of workspace."
       }
     },
-      "location": {
-        "type": "string",
-        "allowedValues": [
-          "northeurope",
-          "westeurope"
-        ],
+    "location": {
+      "type": "string",
+      "allowedValues": [
+        "northeurope",
+        "westeurope"
+      ],
       "metadata": {
         "description": "Location for all resources."
       }
     },
+    "Tagging - SPOKE": {
+      "type": "string",
+      "metadata": {
+        "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+      }
+    },
     "Tagging - CUST-CODE": {
-        "type": "string",
-        "defaultValue": "",
-        "metadata": {
-            "description": "Tagging value for CUST-CODE"
-        }
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for CUST-CODE"
+      }
     },
     "Tagging - OWNER": {
-        "type": "string",
-        "defaultValue": "",
-        "metadata": {
-            "description": "Tagging value for OWNER"
-        }
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for OWNER"
+      }
     },
     "Tagging - RESOURCE-GROUP": {
-        "type": "string",
-        "defaultValue": "",
-        "metadata": {
-            "description": "Tagging value for RESOURCE-GROUP"
-        }
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for RESOURCE-GROUP"
+      }
     },
     "Tagging - HUB-DATASCIENCE-FUNCTION": {
-        "type": "string",
-        "allowedValues": ["MARKETING",
-          "LEX",
-          "CORPORATE",
-          "FINANCE",
-          "OPERATIONS",
-          "PROCUREMENT",
-          "R&D",
-          "N/A"
-        ],
-        "metadata": {
-            "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
-        }
+      "type": "string",
+      "allowedValues": ["MARKETING",
+        "LEX",
+        "CORPORATE",
+        "FINANCE",
+        "OPERATIONS",
+        "PROCUREMENT",
+        "R&D",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+      }
     },
     "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
-        "type": "string",
-        "allowedValues": ["MARKETING",
-          "LEX",
-          "CORPORATE",
-          "FINANCE",
-          "OPERATIONS",
-          "PROCUREMENT",
-          "R&D",
-          "N/A"
-        ],
-        "metadata": {
-            "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
-        }
+      "type": "string",
+      "allowedValues": ["MARKETING",
+        "LEX",
+        "CORPORATE",
+        "FINANCE",
+        "OPERATIONS",
+        "PROCUREMENT",
+        "R&D",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+      }
     },
     "Tagging - HUB-DATASCIENCE-USECASE": {
-        "type": "string",
-        "allowedValues": ["LEX-BRZ-AIT",
-          "MARKETING-BRZ-SOQ",
-          "MARKETING-AUS-PRICING-SOLUTION",
-          "N/A"
-        ],
-        "metadata": {
-            "description": "Tagging value for HUB-DATASCIENCE-USECASE"
-        }
+      "type": "string",
+      "allowedValues": ["LEX-BRZ-AIT",
+        "MARKETING-BRZ-SOQ",
+        "MARKETING-AUS-PRICING-SOLUTION",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+      }
     },
     "Tagging - SPOKE-DATASCIENCE-USECASE": {
-        "type": "string",
-        "allowedValues": ["LEX-BRZ-AIT",
-          "MARKETING-BRZ-SOQ",
-          "MARKETING-AUS-PRICING-SOLUTION",
-          "N/A"
-        ],
-        "metadata": {
-            "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
-        }
-    },
-    "Tagging - SPOKE": {
-        "type": "string",
-        "metadata": {
-            "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
-        }
+      "type": "string",
+      "allowedValues": ["LEX-BRZ-AIT",
+        "MARKETING-BRZ-SOQ",
+        "MARKETING-AUS-PRICING-SOLUTION",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+      }
     }
   },
   "functions": [],

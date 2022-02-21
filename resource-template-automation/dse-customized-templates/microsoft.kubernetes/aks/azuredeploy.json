@@ -2,179 +2,179 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-       "clusterName": {
-          "type": "string",
-          "metadata": {
-              "description": "The name of the Managed Cluster resource."
-          }
-      },
-      "environment": {
-        "type": "string",
-        "metadata": {
-          "description": "Specifies the name of the environment."
-        }
-      },
-      "location": {
-        "type": "string",
-        "allowedValues": [
-          "northeurope",
-          "westeurope"
-        ],
-        "metadata": {
-          "description": "The location of the Managed Cluster resource."
-        }
-      },
-      "osDiskSizeGB": {
-          "type": "int",
-          "defaultValue": 100,
-          "metadata": {
-              "description": "Disk size (in GB) to provision for each of the agent pool nodes. This value minimun 30 to 1023. Specifying 100 is the default value required to be attached to Azure ML."
-          },
-          "minValue": 30,
-          "maxValue": 1023
-      },
-      "agentCount": {
-          "type": "int",
-          "defaultValue": 3,
-          "metadata": {
-              "description": "The number of nodes for the cluster."
-          },
-          "minValue": 1,
-          "maxValue": 50
-      },
-      "podCidr": {
-          "type": "string",
-          "defaultValue": "10.244.0.0/16",
-          "metadata": {
-              "description": "A CIDR notation IP range from which to assign pod IPs when kubenet is used"
-          }
-      },
-      "serviceCidr": {
-          "type": "string",
-          "defaultValue": "10.0.0.0/16",
-          "metadata": {
-              "description": "A CIDR notation IP range from which to assign service cluster IPs."
-          }
-      },
-      "dnsServiceIP": {
-          "type": "string",
-          "defaultValue": "10.0.0.10",
-          "metadata": {
-              "description": "An IP address assigned to the Kubernetes DNS service"
-          }
-      },
-      "dockerBridgeCidr": {
-          "type": "string",
-          "defaultValue": "172.17.0.1/16",
-          "metadata": {
-              "description": "A specific IP address and netmask for the Docker bridge, using standard CIDR notation."
-          }
-      },
-      "agentVMSize": {
-          "type": "string",
-          "defaultValue": "Standard_D4_v3",
-          "metadata": {
-              "description": "The size of the VM instances"
-          }
-      },
-      "kubernetesVersion": {
-          "type": "string",
-          "metadata": {
-              "description": "Supported Azure Kubernetes version"
-          }
-      },
-      "linuxAdminUsername": {
-          "type": "string",
-          "metadata": {
-              "description": "User name for the Linux Virtual Machines."
-          }
-      },
-      "sshRSAPublicKey": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Configure all linux machines with the SSH RSA public key string. Your key should include three parts, for example 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'"
-          }
-      },
-      "Tagging - CUST-CODE": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Tagging value for CUST-CODE"
-          }
-      },
-      "Tagging - OWNER": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Tagging value for OWNER"
-          }
-      },
-      "Tagging - RESOURCE-GROUP": {
-          "type": "string",
-          "defaultValue": "",
-          "metadata": {
-              "description": "Tagging value for RESOURCE-GROUP"
-          }
-      },
-      "Tagging - HUB-DATASCIENCE-FUNCTION": {
-          "type": "string",
-          "allowedValues": ["MARKETING",
-            "LEX",
-            "CORPORATE",
-            "FINANCE",
-            "OPERATIONS",
-            "PROCUREMENT",
-            "R&D",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
-          }
-      },
-      "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
-          "type": "string",
-          "allowedValues": ["MARKETING",
-            "LEX",
-            "CORPORATE",
-            "FINANCE",
-            "OPERATIONS",
-            "PROCUREMENT",
-            "R&D",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
-          }
-      },
-      "Tagging - HUB-DATASCIENCE-USECASE": {
-          "type": "string",
-          "allowedValues": ["LEX-BRZ-AIT",
-            "MARKETING-BRZ-SOQ",
-            "MARKETING-AUS-PRICING-SOLUTION",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for HUB-DATASCIENCE-USECASE"
-          }
-      },
-      "Tagging - SPOKE-DATASCIENCE-USECASE": {
-          "type": "string",
-          "allowedValues": ["LEX-BRZ-AIT",
-            "MARKETING-BRZ-SOQ",
-            "MARKETING-AUS-PRICING-SOLUTION",
-            "N/A"
-          ],
-          "metadata": {
-              "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
-          }
-      },
-      "Tagging - SPOKE": {
-          "type": "string",
-          "metadata": {
-              "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
-          }
+    "clusterName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the Managed Cluster resource."
       }
+    },
+    "environment": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the name of the environment."
+      }
+    },
+    "location": {
+      "type": "string",
+      "allowedValues": [
+        "northeurope",
+        "westeurope"
+      ],
+      "metadata": {
+        "description": "The location of the Managed Cluster resource."
+      }
+    },
+    "osDiskSizeGB": {
+      "type": "int",
+      "defaultValue": 100,
+      "metadata": {
+        "description": "Disk size (in GB) to provision for each of the agent pool nodes. This value minimun 30 to 1023. Specifying 100 is the default value required to be attached to Azure ML."
+      },
+      "minValue": 30,
+      "maxValue": 1023
+    },
+    "agentCount": {
+      "type": "int",
+      "defaultValue": 3,
+      "metadata": {
+        "description": "The number of nodes for the cluster."
+      },
+      "minValue": 1,
+      "maxValue": 50
+    },
+    "podCidr": {
+      "type": "string",
+      "defaultValue": "10.244.0.0/16",
+      "metadata": {
+        "description": "A CIDR notation IP range from which to assign pod IPs when kubenet is used"
+      }
+    },
+    "serviceCidr": {
+      "type": "string",
+      "defaultValue": "10.0.0.0/16",
+      "metadata": {
+        "description": "A CIDR notation IP range from which to assign service cluster IPs."
+      }
+    },
+    "dnsServiceIP": {
+      "type": "string",
+      "defaultValue": "10.0.0.10",
+      "metadata": {
+        "description": "An IP address assigned to the Kubernetes DNS service"
+      }
+    },
+    "dockerBridgeCidr": {
+      "type": "string",
+      "defaultValue": "172.17.0.1/16",
+      "metadata": {
+        "description": "A specific IP address and netmask for the Docker bridge, using standard CIDR notation."
+      }
+    },
+    "agentVMSize": {
+      "type": "string",
+      "defaultValue": "Standard_D4_v3",
+      "metadata": {
+        "description": "The size of the VM instances"
+      }
+    },
+    "kubernetesVersion": {
+      "type": "string",
+      "metadata": {
+        "description": "Supported Azure Kubernetes version"
+      }
+    },
+    "linuxAdminUsername": {
+      "type": "string",
+      "metadata": {
+        "description": "User name for the Linux Virtual Machines."
+      }
+    },
+    "sshRSAPublicKey": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Configure all linux machines with the SSH RSA public key string. Your key should include three parts, for example 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'"
+      }
+    },
+    "Tagging - SPOKE": {
+      "type": "string",
+      "metadata": {
+        "description": "Tagging value for SPOKE, guide here: https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes"
+      }
+    },
+    "Tagging - CUST-CODE": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for CUST-CODE"
+      }
+    },
+    "Tagging - OWNER": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for OWNER"
+      }
+    },
+    "Tagging - RESOURCE-GROUP": {
+      "type": "string",
+      "defaultValue": "",
+      "metadata": {
+        "description": "Tagging value for RESOURCE-GROUP"
+      }
+    },
+    "Tagging - HUB-DATASCIENCE-FUNCTION": {
+      "type": "string",
+      "allowedValues": ["MARKETING",
+        "LEX",
+        "CORPORATE",
+        "FINANCE",
+        "OPERATIONS",
+        "PROCUREMENT",
+        "R&D",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for HUB-DATASCIENCE-FUNCTION"
+      }
+    },
+    "Tagging - SPOKE-DATASCIENCE-FUNCTION": {
+      "type": "string",
+      "allowedValues": ["MARKETING",
+        "LEX",
+        "CORPORATE",
+        "FINANCE",
+        "OPERATIONS",
+        "PROCUREMENT",
+        "R&D",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for SPOKE-DATASCIENCE-FUNCTION"
+      }
+    },
+    "Tagging - HUB-DATASCIENCE-USECASE": {
+      "type": "string",
+      "allowedValues": ["LEX-BRZ-AIT",
+        "MARKETING-BRZ-SOQ",
+        "MARKETING-AUS-PRICING-SOLUTION",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for HUB-DATASCIENCE-USECASE"
+      }
+    },
+    "Tagging - SPOKE-DATASCIENCE-USECASE": {
+      "type": "string",
+      "allowedValues": ["LEX-BRZ-AIT",
+        "MARKETING-BRZ-SOQ",
+        "MARKETING-AUS-PRICING-SOLUTION",
+        "N/A"
+      ],
+      "metadata": {
+        "description": "Tagging value for SPOKE-DATASCIENCE-USECASE"
+      }
+    }
   },
   "variables": {
    "dnsPrefix": "[parameters('clusterName')]"
