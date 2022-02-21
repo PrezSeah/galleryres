@@ -46,5 +46,8 @@ Follow the below step.
 
   ![No Condition](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/NoCondition.JPG)
 
+## Download Template
+* (https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/PowerAutomateFlows/AutomateDevOps.zip)
+
 ## Reference Link
 * https://powerobjects.com/flow/automation-using-flow-and-azure-devops/
