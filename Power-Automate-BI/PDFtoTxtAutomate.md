@@ -1,3 +1,9 @@
+---
+noteId: "2aa229d0954711ecb95f9f55f7ab0147"
+tags: []
+
+---
+
 # Convert PDF to TXT in Power Automate
 
 
