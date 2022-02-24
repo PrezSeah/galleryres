@@ -1,8 +1,3 @@
----
-noteId: "2aa229d0954711ecb95f9f55f7ab0147"
-tags: []
-
----
 
 # Convert PDF to TXT in Power Automate
 
@@ -17,3 +12,7 @@ Our first step in setting up our flow is getting the contents of a PDF file from
 Then, we can run it. Below, you will see the result:
 
 ![Flow1](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/Image2pdftoTxt.JPG)
+
+
+## Reference links
+* https://cloudmersive.com/examples/convert-pdf-to-txt-in-power-automate
