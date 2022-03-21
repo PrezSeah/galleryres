@@ -6,7 +6,7 @@ This automation template covers:
 
 ## Trigger the automation pipeline
 An intuitive parameter form-like pop ups before running the pipeline. These information is crucial to ensure the resources provisioned is following as the service request by end markets.
-![automation-pipeline.png](./images/automation-pipeline.png)
+![automation-pipeline.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/aml-newrelic/images/automation-pipeline.png)
 
 ## By the completion of the automation, you will get:
 1. Resources created following the configuration, naming and tagging convention as parameter input in the automation pipeline.
