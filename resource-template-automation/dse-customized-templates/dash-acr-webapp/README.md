@@ -10,10 +10,25 @@ An intuitive parameter form-like pop ups before running the pipeline. These info
 
 ![automation-pipeline.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/dash-acr-webapp/images/automation-pipeline.png)
 
+
+### Resources Validation with What-If Operation and Approval
+While the resources are in creation, there will be ARM template deployment `What-If operation` to preview the changes that will happen in the first stage.
+
+![what-if.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/dash-acr-webapp/images/what-if.png)
+
+Once the changes preview is satisfied, pipeline can be approved to proceed into next step.
+
+![pipeline-approval.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/dash-acr-webapp/images/pipeline-approval.png)
+
+
 ## By the completion of the automation, you will get:
 1. Resources created following the configuration, naming and tagging convention as parameter input in the automation pipeline.
 
+![resource-group-deployment.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/dash-acr-webapp/images/resource-group-deployment.png)
+
 2. Repository intialized based on the naming convention along with branching policy and CI/CD pipeline yaml in place.
+
+![repo-intialization.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/dash-acr-webapp/images/repo-intialization.png)
 
 ## Get started
 To get started, click [Quickstart using Azure Pipelines](https://dev.azure.com/batdigital/OneDRA/_build?definitionId=6651).
