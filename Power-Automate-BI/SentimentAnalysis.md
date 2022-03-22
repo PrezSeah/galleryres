@@ -40,8 +40,10 @@ Below is the report using above data in Power BI that is more useful in analysis
 
 ## Import a Downloaded Template
 * Sign into Power Automate, and then select Solutions from the navigation bar on the left side of the screen.
+  
   ![Solution](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution1.JPG)
 * Select Import.
+  
   ![Import](https://raw.githubusercontent.com/PrezSeah/galleryres/main/Power-Automate-BI/images/ImportSolution2.JPG)
 * Select Browse from the Import a solution page that opens.
 * Find, and then select the solution that you want to import.
