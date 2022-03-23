@@ -1,4 +1,8 @@
 # Dash App Deployment (end-to-end)
+
+## Get started
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://dev.azure.com/batdigital/OneDRA/_build?definitionId=6651).
+
 This automation template covers:
 1. Provisioning of Dash App Cloud Resources (App Service Plan, App Service and Azure Container Registry) - configuration of the infrastructure such as naming, tagging, location, SKU can be done in the pipeline.
 2. Cloud resource provisioned according to standardized naming and tagging convention.
@@ -33,6 +37,3 @@ Once the changes preview is satisfied, pipeline can be approved to proceed into 
 3. Repository intialized based on the naming convention along with branching policy and CI/CD pipeline yaml in place.
 
 ![repo-intialization.png](https://github.com/PrezSeah/galleryres/raw/main/resource-template-automation/dse-customized-templates/dash-acr-webapp/images/repo-intialization.png)
-
-## Get started
-To get started, click [Quickstart using Azure Pipelines](https://dev.azure.com/batdigital/OneDRA/_build?definitionId=6651).
