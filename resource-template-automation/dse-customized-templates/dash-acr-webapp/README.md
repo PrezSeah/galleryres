@@ -2,9 +2,10 @@
 This automation template covers:
 1. Provisioning of Dash App Cloud Resources (App Service Plan, App Service and Azure Container Registry) - configuration of the infrastructure such as naming, tagging, location, SKU can be done in the pipeline.
 2. Cloud resource provisioned according to standardized naming and tagging convention.
-3. Password-less authentication between App Service and ACR usig Managed Identity with ACRPull role assigned to the newly created App service.
-4. Setting up of Azure Git repo for data scientist for their storage of development code.
-5. An ADO pipeline yaml are in place when the Git repo is initialized.
+3. Password-less authentication between App Service and ACR using Managed Identity with `ACRPull` role assigned to the newly created App service.
+4. App Service configured to pull new images with `latest` tag from the newly created ACR with Continuous Deployment configuration setup.
+5. Setting up of Azure Git repo for data scientist for their storage of development code with branch policy configured.
+6. An ADO pipeline yaml with proper Ci/CD setup are in place when the Git repo is initialized.
 
 ## Trigger the automation pipeline
 An intuitive parameter form-like pop ups before running the pipeline. These information is crucial to ensure the resources provisioned is following as the service request by end markets.
