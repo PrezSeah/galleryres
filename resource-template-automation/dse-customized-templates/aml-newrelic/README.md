@@ -1,7 +1,7 @@
 # Azure Machine Learning ARM Template Automated Deployment with NewRelic Setup
 
 ## Get started
-[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://dev.azure.com/batdigital/OneDRA/_build?definitionId=6805).
+[![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://dev.azure.com/batdigital/OneDRA/_build?definitionId=6805)
 
 This automation template covers:
 1. Provisioning of prerequisite resources for Azure Machine Learning (AML) Workspace and AML Workspace itself - configuration of the infrastructure such as naming, tagging, location, SKU can be done in the pipeline.
