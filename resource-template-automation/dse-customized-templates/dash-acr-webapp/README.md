@@ -1,9 +1,11 @@
 # Dash App Deployment (end-to-end)
 
 ## Get started
+1. Click to deploy here.
 [![Deploy To Azure](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true)](https://dev.azure.com/batdigital/OneDRA/_build?definitionId=6651)
+2. Click `Run pipeline` on top right. 
 
-This automation template covers:
+## This automation template covers:
 1. Provisioning of Dash App Cloud Resources (App Service Plan, App Service and Azure Container Registry) - configuration of the infrastructure such as naming, tagging, location, SKU can be done in the pipeline.
 2. Cloud resource provisioned according to standardized naming and tagging convention.
 3. Password-less authentication between App Service and ACR using Managed Identity with `ACRPull` role assigned to the newly created App service.
