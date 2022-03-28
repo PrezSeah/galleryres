@@ -6,7 +6,7 @@
 2. Click `Run pipeline` on top right. 
 
 ## This automation template covers:
-1. Provisioning of prerequisite resources for Azure Machine Learning (AML) Workspace and AML Workspace itself - configuration of the infrastructure such as naming, tagging, location, SKU can be done in the pipeline.
+1. Provisioning of prerequisite resources for Azure Machine Learning (AML) Workspace and AML Workspace itself.
 2. Cloud resource provisioned according to standardized naming and tagging convention.
 3. NewRelic installation setup script at AML compute instance.
 

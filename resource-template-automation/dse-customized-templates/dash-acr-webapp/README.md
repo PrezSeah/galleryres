@@ -6,7 +6,7 @@
 2. Click `Run pipeline` on top right. 
 
 ## This automation template covers:
-1. Provisioning of Dash App Cloud Resources (App Service Plan, App Service and Azure Container Registry) - configuration of the infrastructure such as naming, tagging, location, SKU can be done in the pipeline.
+1. Provisioning of Dash App Cloud Resources (App Service Plan, App Service and Azure Container Registry).
 2. Cloud resource provisioned according to standardized naming and tagging convention.
 3. Password-less authentication between App Service and ACR using Managed Identity with `ACRPull` role assigned to the newly created App service.
 4. App Service configured to pull new images with `latest` tag from the newly created ACR with Continuous Deployment configuration setup.
