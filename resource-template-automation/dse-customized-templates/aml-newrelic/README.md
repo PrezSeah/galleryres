@@ -10,6 +10,11 @@
 2. Cloud resource provisioned according to standardized naming and tagging convention.
 3. NewRelic installation setup script at AML compute instance.
 
+## Values provided from pipelines automation:
+1. Reduce lead time on infrastructure provisioning
+2. Improve consistency of standardization of naming and tagging on infra
+3. Provide quickstarts that advocates best practice and governance
+
 ## Trigger the automation pipeline
 An intuitive parameter form-like pop ups before running the pipeline. These information is crucial to ensure the resources provisioned is following as the service request by end markets.
 

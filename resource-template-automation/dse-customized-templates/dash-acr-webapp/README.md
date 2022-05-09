@@ -13,6 +13,11 @@
 5. Setting up of Azure Git repo for data scientist for their storage of development code with branch policy configured.
 6. An ADO pipeline yaml with proper CI/CD setup are in place when the Git repo is initialized.
 
+## Values provided from pipelines automation:
+1. Reduce lead time on infrastructure provisioning and repo initialization
+2. Improve consistency of standardization of naming and tagging on infra, folder structure in repo
+3. Provide quickstarts that advocates best practice and governance (externalize credential from source code, authenticate password-less within cloud resources)
+
 ## Trigger the automation pipeline
 An intuitive parameter form-like pop ups before running the pipeline. These information is crucial to ensure the resources provisioned is following as the service request by end markets.
 
