@@ -1,8 +1,4 @@
----
-noteId: "640c8a108fc711ecb57c076a5a9176f2"
-tags: []
 
----
 
 # Automate DevOps Using Power Automate
 
