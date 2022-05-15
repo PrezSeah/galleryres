@@ -3,7 +3,7 @@
 It consist of MLOps Models deployment pipeline/DevOps section
 
 
-## MLOps Model Monitoring
+## MLOps Model Deployment Monitoring
 ![CoE.png](https://github.com/PrezSeah/galleryres/blob/main/dse-app/mlops-monitor/images/Platform-CoE-4-MLOps_Deployment.png)
 
 ## Get started here
