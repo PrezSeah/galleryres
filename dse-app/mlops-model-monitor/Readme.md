@@ -6,4 +6,4 @@ This is a DSE Model Monitoring which consist of model monitoring, drifting, REST
 ![mlopsmon.png](https://github.com/PrezSeah/galleryres/blob/main/dse-app/mlops-model-monitor/images/ml-model-monitor.PNG)
 
 ## Get started here
-[Link to the App](https://app.powerbi.com/groups/9437d536-0005-4224-98cd-54b45dab0a47/reports/ab11487f-f6f3-4f43-93cd-b1f7fbada071/ReportSection374e3322ef3d83a511cc&source=portal&screenColor=rgba%280%2C+79%2C+159%2C+1%29&skipAppMetadata=true)
+[Link to the App](https://app.powerbi.com/links/bjpb9fmHXl?ctid=ff9c7474-421d-4957-8d47-c4b64dec87b5&pbi_source=linkShare&bookmarkGuid=66012522-2a37-42dc-bacb-0d99cccd1035&source=portal&screenColor=rgba%280%2C+79%2C+159%2C+1%29&skipAppMetadata=true)
